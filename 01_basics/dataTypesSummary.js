@@ -50,4 +50,31 @@ const myFunction = function(){
 // String = string
 // Object =  object
 // Object = function
- 
+
+
+// +++++++++++++ memory +++++++++++++++++++++
+
+
+// Stack (primitive), Heap (non-primitive)
+
+let one = "Kaushal"
+
+let two = one
+two = "Jag" 
+
+console.log(one) // kaushal aayega change nhi hoga yaha
+console.log(two) // yaha par copy mila and value change hua toh Jag
+
+let userOne = {
+    email: "user@google.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "jag@goole.com"
+
+console.log(userOne)   // jag@goole.com
+console.log(userTwo)   // jag@google.com
+
+// ish case me value dono scenario me cahnge hojayegi
+// reason ye reference type h toh copyu nhi milta

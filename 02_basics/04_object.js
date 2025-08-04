@@ -72,3 +72,10 @@ users[1].email
 
  const {courseinstructor: instructor} = course     // destructure
  console.log(instructor)
+
+//  {
+//     "name" : "kaushal",
+//     "from" : "indore",          // JSON format
+//     "now" : "jaipur"
+//  }
+

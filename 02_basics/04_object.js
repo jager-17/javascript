@@ -28,7 +28,7 @@ const obj4 = {5: "c", 6: "f"}
 
 
 const obj3 = {...obj1, ...obj2, ...obj4}
-console.log(obj3)
+// console.log(obj3)
 
 
 const users = [
@@ -49,11 +49,26 @@ const users = [
 
 users[1].email
 
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser))     // [ 'id', 'name', 'isLoggedIn' ] - string me aajayega ye
-console.log(Object.values(tinderUser))   // [ '123abc', 'Bunty', false ] same for values
-//console.log(Object.values(tinderUser))   // [ '123abc', 'Bunty', false ] same for values
-console.log(Object.entries(tinderUser))   // 
+// console.log(Object.keys(tinderUser))     // [ 'id', 'name', 'isLoggedIn' ] - string me aajayega ye
+// console.log(Object.values(tinderUser))   // [ '123abc', 'Bunty', false ] same for values
+// //console.log(Object.values(tinderUser))   // [ '123abc', 'Bunty', false ] same for values
+// console.log(Object.entries(tinderUser))   // 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))   // true property h 
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))   // true property h 
+
+
+ const course = {
+    coursename : "Js",
+    courseprice: "999",
+    courseinstructor: "hitesh"
+ }
+
+ // course.instructor
+
+ // const {courseinstructor} = course   // uou can access these way also
+ // console.log(courseinstructor)
+
+ const {courseinstructor: instructor} = course     // destructure
+ console.log(instructor)

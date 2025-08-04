@@ -70,7 +70,7 @@ users[1].email
  // const {courseinstructor} = course   // uou can access these way also
  // console.log(courseinstructor)
 
- const {courseinstructor: instructor} = course     // destructure
+ const {courseinstructor: instructor} = course     // destructuring   to extract properties in a variable
  console.log(instructor)
 
 //  {

@@ -35,7 +35,7 @@ const user2 = {
     coffee : function() {
         
         console.log(this.userfullname)
-        console.log(this)      // yaha par undefined aayega kyoki this for current context object me kaam karta h function me nhi}
+        console.log(this)      
     } 
 }
 // user2.coffee()

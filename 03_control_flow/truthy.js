@@ -1,6 +1,6 @@
 const userEmail = []
 
-if (userEmail) {
+if (userEmail) {      // array h isliye print hoga
     console.log("Got user email");
 } else {
     console.log("Don't have user email");

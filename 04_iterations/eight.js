@@ -6,9 +6,7 @@ const initialValue = 0
 
 const newNums = myNums.reduce(
             (accumulator, currentValue) => accumulator + currentValue, 
-            //console.log(`acc: ${accumulator} and currentValue : ${cuurentValue} `)
             initialValue)
-            
 console.log(newNums);
 
 const myTotal = myNums.reduce(function (acc, currval) {
@@ -19,6 +17,8 @@ const myTotal = myNums.reduce(function (acc, currval) {
 
 console.log(myTotal)
 
+const total = myNums.reduce((acc, curr) => acc+ curr, 0)        // another way
+
 
 /* yaha par accumulator starting me initialvalue lega jo ki 0 h and 
 then accumulator + cuurentvalue (array me current value abhi jese 1 uske baad jo value h)
@@ -28,3 +28,28 @@ jese ki 0 + 1 = 1
 3 + 3 = 6
 6 + 4 = 10
 10 + 5 = 15  , this is how reduce works*/
+
+
+const shoppingCart = [ 
+    {
+        course: 'js',
+        price: 2999,
+    },
+    {
+        course: 'py',
+        price: 999,
+    },
+    {
+        course: 'java',
+        price: 1999,
+    },
+    {
+        course: 'React',
+        price: 3999,
+    },
+
+]
+
+const shoppingtotal = shoppingCart.reduce((acc, item) => acc + item.price, 0 )
+
+console.log(shoppingtotal)

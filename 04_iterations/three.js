@@ -28,7 +28,7 @@ map.set('IN', "India")
 
 console.log(map);
 
-
+// output:
 // Map(3) {
 //   'IN' => 'India',
 //   'USA' => 'United States Of America',

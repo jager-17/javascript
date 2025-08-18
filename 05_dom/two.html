@@ -13,4 +13,33 @@
         <div class="day">Thursday</div>
     </div>
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent) // parent html collection nhi. deta h 
+    // console.log(parent.children);  // html collection aajayega array like and we can use some properties of that
+    // console.log(parent.children[1].innerHTML);
+    
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML)
+        
+    }  // pura loop chalega monday tuesday wednesday thursday
+    Object.assign(parent.children[1].style,{
+        color: "orange",
+        backgroundColor: "beige",
+        padding: "3px"
+    }) // sari chize tuesday me lagega
+
+    console.log(parent.firstElementChild) // Monday(First Child) aa rha h
+    console.log(parent.lastElementChild)  // Thursday(last Child)
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne)   // monday
+    // console.log(dayOne.parentElement)  // pura parent element aajayega
+    // console.log(dayOne.nextElementSibling)  // Tuesday uska next element aajayega
+
+    console.log("Nodes: ", parent.childNodes) // 9 , line break and each linetext ko count karta h
+
+    
+
+</script>
 </html>

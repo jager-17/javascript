@@ -10,6 +10,26 @@
     
 </body>
 <script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.classname = "main"
+    div.id = Math.floor((Math.random() * 10 + 1)
+
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "skyBlue"
+    div.style.padding = "10px"
+    // div.innerText = "kaushal Jangir"   // optimized nhi h
+    const addText = document.createTextNode("Kaushal Jangir")
+    div.appendChild(addText)
+
+    //ye sab , apan dic class bana rhe h jishme apan text add kar rhe h 
+    // class de rhe h id de rhe h id me random number de rhe h 
+    // and bgc , color, padding sab de rhe h 
+
+
+    document.body.appendChild(div)
+
+    // display ke liye. body me document attached hona chaiye
     
 </script>
 </html>

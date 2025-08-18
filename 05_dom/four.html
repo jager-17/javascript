@@ -26,5 +26,24 @@
     }
     optilanguage('golang')
 
+    // Edit
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML = "mojo"
+    const newli = document.createElement('li')    // pura li select hota h replace ke waqt isliye pehle newli bnaya 
+    newli.textContent = "mojo"
+    secondlang.replaceWith(newli)         // li replace kar rhe h 
+
+
+    const thirdlang = document.querySelector("li:nth-child(3)")
+    const optli = document.createElement("li")
+    optli.appendChild(document.createTextNode("reactjs"))      // more optimized
+    thirdlang.replaceWith(optli)
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>TypeScript</li>' // another replace method // but not suggested to use
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()     // removed last languaGE
 </script>
 </html>
